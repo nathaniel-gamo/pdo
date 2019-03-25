@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PHP CRUD operations using PDO Connection</title>
+    <title>PHP CRUD Operations Using PDO Connection</title>
 
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
