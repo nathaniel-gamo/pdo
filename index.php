@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PHP CRUD Operations Using PDO Connection</title>
+    <title>PHP CRUD Operations Using (PDO) PHP Data Objects Connection</title>
 
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -121,4 +121,4 @@
         </div>
     </div>
 </div>
-<!-- // Modal --> 
+<!-- // Modal -->
