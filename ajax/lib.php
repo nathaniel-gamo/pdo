@@ -50,19 +50,7 @@ class CRUD
         }
         return $data;
     }
- 
-    /*
-     * Delete Record
-     *
-     * @param $user_id
-     * */
-    public function Delete($user_id)
-    {
-        $query = $this->db->prepare("DELETE FROM users WHERE id = :id");
-        $query->bindParam("id", $user_id, PDO::PARAM_STR);
-        $query->execute();
-    }
- 
+
     /*
      * Update Record
      *
@@ -77,6 +65,18 @@ class CRUD
         $query->bindParam("first_name", $first_name, PDO::PARAM_STR);
         $query->bindParam("last_name", $last_name, PDO::PARAM_STR);
         $query->bindParam("email", $email, PDO::PARAM_STR);
+        $query->bindParam("id", $user_id, PDO::PARAM_STR);
+        $query->execute();
+    }
+ 
+    /*
+     * Delete Record
+     *
+     * @param $user_id
+     * */
+    public function Delete($user_id)
+    {
+        $query = $this->db->prepare("DELETE FROM users WHERE id = :id");
         $query->bindParam("id", $user_id, PDO::PARAM_STR);
         $query->execute();
     }
